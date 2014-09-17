@@ -9,8 +9,27 @@ namespace ProducerConsumer_øvelse
     public class BoundedBuffer 
     {
         public int Capacity { get; set; }
-        
-        //ljdlkjgh
+
+        public BoundedBuffer(int capacity)
+        {
+            Capacity = capacity;
+        }
+
+
+        public Boolean IsFull()
+        {
+            
+        }
+
+        public override void Put(int element)
+        {
+            
+        }
+
+        public override int Take()
+        {
+            
+        }
 
     }
 }
