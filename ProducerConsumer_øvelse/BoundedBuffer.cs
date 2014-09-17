@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,21 @@ namespace ProducerConsumer_øvelse
         public BoundedBuffer(int capacity)
         {
             Capacity = capacity;
-        }
-
+            Capacity = 0; 
+            
+            Queue<int> buffer = new Queue<int>();
+        }       
 
         public Boolean IsFull()
         {
-            
+            if (Capacity == 100)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public override void Put(int element)

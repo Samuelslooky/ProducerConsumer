@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,10 @@ namespace ProducerConsumer_øvelse
 
         public void Run()
         {
-            
+            for (int i = 0; i < 100; i++)
+            {
+                BoundedBuffer.
+            }
         }
 
         

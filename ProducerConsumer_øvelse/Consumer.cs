@@ -8,5 +8,7 @@ namespace ProducerConsumer_øvelse
 {
     class Consumer
     {
+       
+
     }
 }
