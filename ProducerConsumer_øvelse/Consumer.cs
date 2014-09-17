@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace ProducerConsumer_øvelse
 {
-    class Consumer
+    public class Consumer
     {
-       
+        
+        
+        public void Run()
+        {
+            
+        }
 
     }
 }

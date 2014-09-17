@@ -38,7 +38,7 @@ namespace ProducerConsumer_øvelse
 
         public override int Take()
         {
-            
+            Buffer.Dequeue();
         }
 
     }
