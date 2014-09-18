@@ -12,11 +12,14 @@ namespace ProducerConsumer_øvelse
     {
         public int LastElement { get; set; }
         public int LastItem { get; set; }
+        public BoundedBuffer Buffer { get; set; }
 
-        public Producer(int lastElement, int lastItem)
+        public Producer(BoundedBuffer buf, int lastElement, int lastItem)
         {
             LastElement = lastElement;
             LastItem = lastItem;
+            Buffer = buf;
+
         }
 
         public void Run()
@@ -24,17 +27,13 @@ namespace ProducerConsumer_øvelse
             Random rnd = new Random();
             for (int i = 0; i < 100; i++)
             {
-                bool isfull = BoundedBuffer.IsFull();
+                bool isfull = Buffer.IsFull();
                 if (isfull == false)
                 {
-                    int elementNumber = rnd.Next(1, 100);
-                    BoundedBuffer.Put(elementNumber);
+                    int element = rnd.Next(1, 100);
+                    Buffer.Put(element);
                 }
-                
-                
-            }
-                
-                
+            }       
             
         }
 
