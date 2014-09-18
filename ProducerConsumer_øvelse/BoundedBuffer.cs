@@ -31,12 +31,12 @@ namespace ProducerConsumer_øvelse
             }
         }
 
-        public override void Put(int element)
+        public void Put(int element)
         {
             Buffer.Enqueue(element);
         }
 
-        public override int Take()
+        public int Take()
         {
             Buffer.Dequeue();
         }
